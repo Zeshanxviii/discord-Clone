@@ -117,20 +117,6 @@ exports.Prisma.TransactionIsolationLevel = makeStrictEnum({
   Serializable: 'Serializable'
 });
 
-exports.Prisma.PostScalarFieldEnum = {
-  id: 'id',
-  title: 'title',
-  content: 'content',
-  published: 'published',
-  authorId: 'authorId'
-};
-
-exports.Prisma.UserScalarFieldEnum = {
-  id: 'id',
-  email: 'email',
-  name: 'name'
-};
-
 exports.Prisma.ProfileScalarFieldEnum = {
   id: 'id',
   userId: 'userId',
@@ -179,11 +165,6 @@ exports.Prisma.QueryMode = {
   default: 'default',
   insensitive: 'insensitive'
 };
-
-exports.Prisma.NullsOrder = {
-  first: 'first',
-  last: 'last'
-};
 exports.MemberRole = exports.$Enums.MemberRole = {
   ADMIN: 'ADMIN',
   MODERATOR: 'MODERATOR',
@@ -196,8 +177,6 @@ exports.ChannelType = exports.$Enums.ChannelType = {
 };
 
 exports.Prisma.ModelName = {
-  Post: 'Post',
-  User: 'User',
   Profile: 'Profile',
   Server: 'Server',
   Member: 'Member',
